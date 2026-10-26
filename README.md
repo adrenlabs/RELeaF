@@ -13,11 +13,12 @@ RELeaF is an open-source, Android/Termux-first toolkit for organizing static ana
 - Make AI assistance optional; never require a paid API for basic local inspection.
 - Treat input binaries as data: do not install or execute analyzed APKs.
 
-## Planned components
-- **Local analysis bridge:** MCP stdio interface for compatible clients.
-- **CLI workflows:** APK/DEX/ELF inventory and tool orchestration.
-- **Optional AI adapter:** separate module; network use and model costs must be explicit.
-- **Documentation:** setup, troubleshooting, safety, and reproducible reports.
+## Included in this initial prototype
+- **Local MCP server** at `src/server.mjs` with six tools: environment check, APK inventory, optional JADX invocation, native-library extraction, ELF inspection, and workspace text search.
+- **Termux installer** at `scripts/setup-termux.sh`.
+- **Setup and safety documentation**.
+
+The separate OpenAI API agent from the experimental development setup is **not included in this initial public commit**. Basic MCP tools do not require an AI API key; an AI client that calls them may have its own model/provider requirements and costs.
 
 ## Requirements
 - Android with [Termux](https://termux.dev/).
@@ -32,7 +33,7 @@ RELeaF is an open-source, Android/Termux-first toolkit for organizing static ana
 - Local tools can still contain bugs. Use a dedicated workspace and review commands before running them.
 
 ## Development status
-This repository is being prepared from an experimental Termux MCP bridge and an optional local AI-agent prototype. The code and documentation will evolve; do not treat the project as production-ready. Contributions and bug reports should include Termux version, architecture, tool versions, and a redacted error log.
+This is an initial experimental prototype. The MCP server has not yet been validated end-to-end on a range of Android/Termux devices. Test with non-sensitive sample files first; do not treat it as production-ready. Contributions and bug reports should include Termux version, architecture, tool versions, and a redacted error log.
 
 ## License
 MIT. See [LICENSE](LICENSE).
