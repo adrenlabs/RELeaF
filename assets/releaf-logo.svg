@@ -1,12 +1,28 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1200" viewBox="0 0 1200 1200">
-<rect width="1200" height="1200" fill="#fffafa"/>
-<g transform="translate(300 300)" fill="#222b33">
-<path d="M110 0H380A130 130 0 0 1 510 130V260H380V130H110Z"/>
-<path d="M130 130A130 130 0 0 0 0 260V390H130V260H260V130Z"/>
-<path d="M260 260H390V390A130 130 0 0 1 260 520H130V390H260Z"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" role="img" aria-label="RELeaF geometric emblem">
+<defs>
+ <linearGradient id="dark" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#283139"/><stop offset="1" stop-color="#111519"/></linearGradient>
+ <linearGradient id="green" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#00f58a"/><stop offset="1" stop-color="#00a95b"/></linearGradient>
+</defs>
+<rect width="1024" height="1024" rx="64" fill="#080a0b"/>
+<g stroke="#00d875" stroke-width="3" stroke-linejoin="round">
+ <path fill="url(#dark)" d="M176 176H544C646 176 728 258 728 360V544H544V360H176Z"/>
+ <path fill="url(#green)" d="M544 176H728V360C728 258 646 176 544 176Z" stroke="none"/>
+ <path fill="url(#dark)" d="M176 728V544C176 442 258 360 360 360H544V544H360V728Z"/>
+ <path fill="url(#green)" d="M176 544C176 442 258 360 360 360H360C258 360 176 442 176 544Z" stroke="none"/>
+ <path fill="url(#dark)" d="M360 544H544V728C544 830 626 912 728 912H544C442 912 360 830 360 728Z"/>
+ <path fill="url(#green)" d="M544 728H728V912C626 912 544 830 544 728Z" stroke="none"/>
+ <path fill="url(#dark)" d="M728 176H848V664C848 801 737 912 600 912H728C830 912 912 830 912 728V176Z" stroke="none" opacity="0"/>
 </g>
-<path fill="#00bf68" d="M560 300H690V430A130 130 0 0 0 820 560V690H690V560A130 130 0 0 1 560 430Z" opacity=".98"/>
-<text x="600" y="825" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="112" font-weight="900" letter-spacing="2"><tspan fill="#222b33">RE</tspan><tspan fill="#00bf68">LEAF</tspan></text>
-<path d="M190 870H1010" stroke="#00bf68" stroke-width="3"/>
-<text x="600" y="920" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="24" letter-spacing="3" fill="#222b33">REVERSE ENGINEERING &amp; LOCAL ANALYSIS FRAMEWORK</text>
+<path d="M728 176H848V664C848 801 737 912 600 912H544V728H728Z" fill="url(#dark)" stroke="#26323a" stroke-width="3"/>
+<path d="M728 664C728 801 626 912 489 912H544C646 912 728 830 728 728Z" fill="url(#green)"/>
+<path d="M176 176H544C646 176 728 258 728 360V176Z" fill="url(#green)"/>
+<path d="M176 176H544C646 176 728 258 728 360H544V360H176Z" fill="url(#dark)"/>
+<path d="M176 544C176 442 258 360 360 360H360V544H360V728H176Z" fill="url(#dark)"/>
+<path d="M360 544H544V728C544 830 626 912 728 912H544C442 912 360 830 360 728Z" fill="url(#dark)"/>
+<path d="M544 728C544 830 626 912 728 912H848V728H728Z" fill="url(#green)"/>
+<path d="M728 176H848V664C848 801 737 912 600 912H728C830 912 912 830 912 728V176Z" fill="url(#dark)" stroke="#26323a" stroke-width="3"/>
+<path d="M176 176H544C646 176 728 258 728 360H544C544 258 462 176 360 176Z" fill="url(#dark)"/>
+<path d="M176 176H544C646 176 728 258 728 360C728 258 646 176 544 176Z" fill="url(#green)"/>
+<path d="M176 544C176 442 258 360 360 360H360C258 360 176 442 176 544Z" fill="url(#green)"/>
+<path d="M360 544H544V728C544 830 626 912 728 912C626 912 544 830 544 728Z" fill="url(#green)"/>
 </svg>
