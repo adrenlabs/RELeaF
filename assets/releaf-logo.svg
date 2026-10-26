@@ -1,10 +1,22 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="RELeaF geometric icon">
-<rect width="512" height="512" rx="28" fill="#080a0b"/>
-<path d="M72 72H244A100 100 0 0 1 344 172V244H244V172H72Z" fill="#202a32"/>
-<path d="M244 72H344V172A100 100 0 0 0 244 72Z" fill="#00c46a"/>
-<path d="M72 344V244A100 100 0 0 1 172 144H244V244H172V344Z" fill="#202a32"/>
-<path d="M72 244A100 100 0 0 1 172 144H172A100 100 0 0 0 72 244Z" fill="#00c46a"/>
-<path d="M172 244H272V344A100 100 0 0 0 372 444H272A100 100 0 0 1 172 344Z" fill="#202a32"/>
-<path d="M272 344H372V444A100 100 0 0 1 272 344Z" fill="#00c46a"/>
-<path d="M344 72H440V312A132 132 0 0 1 308 444H272V344H344Z" fill="#202a32"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="RELeaF geometric emblem">
+  <rect width="512" height="512" rx="36" fill="#080a0b"/>
+  <g fill="#202a32">
+    <path d="M92 92h146c62 0 112 50 112 112v34h-92v-34c0-11-9-20-20-20H92z"/>
+    <path d="M420 92v182c0 80-65 146-146 146h-18v-92h18c29 0 54-24 54-54V92z"/>
+    <path d="M420 420H274c-62 0-112-50-112-112v-34h92v34c0 11 9 20 20 20h146z" opacity="0"/>
+    <path d="M92 420V274c0-62 50-112 112-112h34v92h-34c-11 0-20 9-20 20v146z"/>
+  </g>
+  <g fill="#00c46a">
+    <path d="M238 92h112v112c0-62-50-112-112-112z"/>
+    <path d="M420 274v112c-62 0-112-50-112-112h92c0 0 0 0 20 0z" opacity="0"/>
+    <path d="M274 420h-92c0-62 50-112 112-112v92c0 11-9 20-20 20z" opacity="0"/>
+    <path d="M92 238v-92c62 0 112 50 112 112h-92c-11 0-20-9-20-20z" opacity="0"/>
+    <path d="M274 420h-18c-80 0-146-65-146-146h92c0 29 24 54 54 54h18z" opacity="0"/>
+    <path d="M328 92h92v182c-51 0-92-41-92-92z" opacity="0"/>
+  </g>
+  <path d="M238 92h112v112c0-62-50-112-112-112z" fill="#00c46a"/>
+  <path d="M420 274v112c-62 0-112-50-112-112h92z" fill="#00c46a"/>
+  <path d="M274 420h-92c0-62 50-112 112-112v92c0 11-9 20-20 20z" fill="#00c46a" opacity="0"/>
+  <path d="M92 238v-92c62 0 112 50 112 112h-92c-11 0-20-9-20-20z" fill="#00c46a" opacity="0"/>
+  <rect x="218" y="218" width="76" height="76" fill="#080a0b"/>
 </svg>
