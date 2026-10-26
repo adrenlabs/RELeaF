@@ -1,13 +1,17 @@
 {
   "name": "releaf-termux",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "private": false,
   "type": "module",
-  "description": "Experimental static APK, DEX and ELF analysis MCP server for Termux",
-  "engines": { "node": ">=22.0.0" },
+  "description": "Experimental static APK, DEX and ELF analysis MCP server and optional local-model agent for Termux",
+  "engines": {
+    "node": ">=22.0.0"
+  },
   "scripts": {
-    "check": "node --check src/server.mjs",
-    "self-test": "node src/server.mjs --self-test"
+    "check": "node --check src/server.mjs && node --check src/agent.mjs",
+    "test": "node tests/smoke.mjs",
+    "self-test": "node src/server.mjs --self-test",
+    "agent:self-test": "node src/agent.mjs --self-test"
   },
   "license": "MIT"
 }
