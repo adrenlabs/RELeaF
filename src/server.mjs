@@ -88,10 +88,9 @@ async function call(name, args) {
     for (const member of libs) {
       const abi = member.split('/')[1], base = path.basename(member);
       const targetDir = path.join(outDir, abi); await mkdir(targetDir, { recursive: true });
-      const r = await run(unzip, ['-p', p, member], 120000);
+      const r = await run(unzip, ['-o', '-qq', p, member, '-d', outDir], 120000);
       if (r.code !== 0) continue;
-      await writeFile(path.join(targetDir, base), r.stdout, { mode: 0o600 });
-      extracted.push(path.join(targetDir, base));
+      extracted.push(path.join(outDir, member));
     }
     return result(JSON.stringify({ outputDirectory: outDir, extractedCount: extracted.length, files: extracted }, null, 2));
   }
