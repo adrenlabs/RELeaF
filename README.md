@@ -25,6 +25,21 @@ The separate OpenAI API agent from the experimental development setup is **not i
 - Node.js 22 or newer for the MCP bridge.
 - Optional tools such as JADX, apktool, radare2/Rizin, binutils and file for deeper analysis. Availability differs by Termux repository.
 
+## Optional local AI agent
+
+An optional `releaf-agent` CLI can connect the MCP tools to a local OpenAI-compatible inference server. It does not require a cloud API key, but you must separately install/run a compatible local model server and use a model/template that supports tool calling. See [Local AI setup](docs/local-ai.md).
+
+After installing the repository, check the tools and agent connection:
+
+```sh
+releaf-mcp --self-test
+releaf-agent --self-test
+npm run check
+npm test
+```
+
+The agent is experimental; self-test verifies the MCP handshake, not that a model can successfully call tools.
+
 ## Safety and privacy
 - Only analyze files you own or are authorized to inspect.
 - RELeaF is for static analysis. It does not promise original source recovery; decompiler output is approximate and can be incomplete.
