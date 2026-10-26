@@ -1,28 +1,10 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" role="img" aria-label="RELeaF geometric emblem">
-<defs>
- <linearGradient id="dark" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#283139"/><stop offset="1" stop-color="#111519"/></linearGradient>
- <linearGradient id="green" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#00f58a"/><stop offset="1" stop-color="#00a95b"/></linearGradient>
-</defs>
-<rect width="1024" height="1024" rx="64" fill="#080a0b"/>
-<g stroke="#00d875" stroke-width="3" stroke-linejoin="round">
- <path fill="url(#dark)" d="M176 176H544C646 176 728 258 728 360V544H544V360H176Z"/>
- <path fill="url(#green)" d="M544 176H728V360C728 258 646 176 544 176Z" stroke="none"/>
- <path fill="url(#dark)" d="M176 728V544C176 442 258 360 360 360H544V544H360V728Z"/>
- <path fill="url(#green)" d="M176 544C176 442 258 360 360 360H360C258 360 176 442 176 544Z" stroke="none"/>
- <path fill="url(#dark)" d="M360 544H544V728C544 830 626 912 728 912H544C442 912 360 830 360 728Z"/>
- <path fill="url(#green)" d="M544 728H728V912C626 912 544 830 544 728Z" stroke="none"/>
- <path fill="url(#dark)" d="M728 176H848V664C848 801 737 912 600 912H728C830 912 912 830 912 728V176Z" stroke="none" opacity="0"/>
-</g>
-<path d="M728 176H848V664C848 801 737 912 600 912H544V728H728Z" fill="url(#dark)" stroke="#26323a" stroke-width="3"/>
-<path d="M728 664C728 801 626 912 489 912H544C646 912 728 830 728 728Z" fill="url(#green)"/>
-<path d="M176 176H544C646 176 728 258 728 360V176Z" fill="url(#green)"/>
-<path d="M176 176H544C646 176 728 258 728 360H544V360H176Z" fill="url(#dark)"/>
-<path d="M176 544C176 442 258 360 360 360H360V544H360V728H176Z" fill="url(#dark)"/>
-<path d="M360 544H544V728C544 830 626 912 728 912H544C442 912 360 830 360 728Z" fill="url(#dark)"/>
-<path d="M544 728C544 830 626 912 728 912H848V728H728Z" fill="url(#green)"/>
-<path d="M728 176H848V664C848 801 737 912 600 912H728C830 912 912 830 912 728V176Z" fill="url(#dark)" stroke="#26323a" stroke-width="3"/>
-<path d="M176 176H544C646 176 728 258 728 360H544C544 258 462 176 360 176Z" fill="url(#dark)"/>
-<path d="M176 176H544C646 176 728 258 728 360C728 258 646 176 544 176Z" fill="url(#green)"/>
-<path d="M176 544C176 442 258 360 360 360H360C258 360 176 442 176 544Z" fill="url(#green)"/>
-<path d="M360 544H544V728C544 830 626 912 728 912C626 912 544 830 544 728Z" fill="url(#green)"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="RELeaF geometric icon">
+<rect width="512" height="512" rx="28" fill="#080a0b"/>
+<path d="M72 72H244A100 100 0 0 1 344 172V244H244V172H72Z" fill="#202a32"/>
+<path d="M244 72H344V172A100 100 0 0 0 244 72Z" fill="#00c46a"/>
+<path d="M72 344V244A100 100 0 0 1 172 144H244V244H172V344Z" fill="#202a32"/>
+<path d="M72 244A100 100 0 0 1 172 144H172A100 100 0 0 0 72 244Z" fill="#00c46a"/>
+<path d="M172 244H272V344A100 100 0 0 0 372 444H272A100 100 0 0 1 172 344Z" fill="#202a32"/>
+<path d="M272 344H372V444A100 100 0 0 1 272 344Z" fill="#00c46a"/>
+<path d="M344 72H440V312A132 132 0 0 1 308 444H272V344H344Z" fill="#202a32"/>
 </svg>
