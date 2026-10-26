@@ -1,6 +1,6 @@
 # RELeaF
 
-![RELeaF geometric icon](https://raw.githubusercontent.com/adrenlabs/RELeaF/main/assets/releaf-logo.svg?v=3)
+![RELeaF geometric icon](https://raw.githubusercontent.com/adrenlabs/RELeaF/main/assets/releaf-logo.svg?v=4)
 **Reverse Engineering & Local Analysis Framework**
 
 RELeaF is an open-source, Android/Termux-first toolkit for organizing static analysis of APK, DEX, and native ELF files (.so). It is designed to be useful without an AI provider; optional AI integrations should remain separate, opt-in components.
