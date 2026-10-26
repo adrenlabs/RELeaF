@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1200" viewBox="0 0 1200 1200">
+<rect width="1200" height="1200" fill="#fffafa"/>
+<g transform="translate(300 300)" fill="#222b33">
+<path d="M110 0H380A130 130 0 0 1 510 130V260H380V130H110Z"/>
+<path d="M130 130A130 130 0 0 0 0 260V390H130V260H260V130Z"/>
+<path d="M260 260H390V390A130 130 0 0 1 260 520H130V390H260Z"/>
+</g>
+<path fill="#00bf68" d="M560 300H690V430A130 130 0 0 0 820 560V690H690V560A130 130 0 0 1 560 430Z" opacity=".98"/>
+<text x="600" y="825" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="112" font-weight="900" letter-spacing="2"><tspan fill="#222b33">RE</tspan><tspan fill="#00bf68">LEAF</tspan></text>
+<path d="M190 870H1010" stroke="#00bf68" stroke-width="3"/>
+<text x="600" y="920" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="24" letter-spacing="3" fill="#222b33">REVERSE ENGINEERING &amp; LOCAL ANALYSIS FRAMEWORK</text>
+</svg>
