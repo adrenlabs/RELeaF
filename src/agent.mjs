@@ -1,15 +1,15 @@
 #!/usr/bin/env node
 /**
  * Optional local-model agent for RELeaF.
- * Talks to an OpenAI-compatible local endpoint (e.g. llama.cpp server); no cloud API key.
- * The agent can call only the allowlisted tools exposed by src/server.mjs.
+ * Talks to an OpenAI-compatible local endpoint; no cloud API key is needed.
  */
 import { spawn } from 'node:child_process';
 import readline from 'node:readline';
+import { fileURLToPath } from 'node:url';
 
 const endpoint = (process.env.RELEAF_BASE_URL || 'http://127.0.0.1:8080/v1').replace(/\/$/, '');
 const model = process.env.RELEAF_MODEL || 'Qwen3-4B';
-const serverPath = new URL('./server.mjs', import.meta.url).pathname;
+const serverPath = fileURLToPath(new URL('./server.mjs', import.meta.url));
 const child = spawn(process.execPath, [serverPath], { stdio: ['pipe', 'pipe', 'inherit'] });
 let nextId = 1;
 const pending = new Map();
@@ -53,8 +53,8 @@ async function askLocalModel(messages, tools) {
   return choice;
 }
 async function main() {
-  await rpc('initialize', { protocolVersion: '2024-11-05', capabilities: {}, clientInfo: { name: 'releaf-local-agent', version: '0.1.0' } });
-  await rpc('notifications/initialized');
+  await rpc('initialize', { protocolVersion: '2025-06-18', capabilities: {}, clientInfo: { name: 'releaf-local-agent', version: '0.1.0' } });
+  child.stdin.write(JSON.stringify({ jsonrpc: '2.0', method: 'notifications/initialized' }) + '\n');
   const listed = await rpc('tools/list');
   const tools = listed.tools || [];
   if (process.argv.includes('--self-test')) {
@@ -87,8 +87,7 @@ async function main() {
         continue;
       }
       let args;
-      try { args = JSON.parse(call.function.arguments || '{}'); }
-      catch { args = null; }
+      try { args = JSON.parse(call.function.arguments || '{}'); } catch { args = null; }
       if (!args || typeof args !== 'object' || Array.isArray(args)) {
         messages.push({ role: 'tool', tool_call_id: call.id, content: 'Rejected: invalid JSON arguments.' });
         continue;
